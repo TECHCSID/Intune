@@ -66,7 +66,7 @@ Install-Module -Name WindowsAutoPilotIntune -Confirm:$false -Force:$true
 
 "Importing hash"
 
-#Get-WindowsAutoPilotInfo -Online -TenantId $TenantId -AppId $AppId -AppSecret $AppSecret -GroupTag $GroupTag
+Get-WindowsAutoPilotInfo -Online -TenantId $TenantId -AppId $AppId -AppSecret $AppSecret -GroupTag $GroupTag
 
 "Retrieving Serial"
 #
