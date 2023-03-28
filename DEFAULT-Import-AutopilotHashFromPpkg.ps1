@@ -51,9 +51,9 @@ Start-Sleep -Seconds 5
 # Functions
 
 # Generate Access Token to use in the connection string to MSGraph
-$AppId = 'YOUR-AZURE-AD-APP-ID'
-$TenantId = 'YOUR-TENANT-ID'
-$AppSecret = 'YOUR-AZURE-AD-APP-ID-SECRET'
+$AppId = 'c06d865e-c3c2-4a4e-9752-3fc7ce8a3f60'
+$TenantId = '9ced4109-8739-4295-8d3f-a19371aae263'
+$AppSecret = 'df59d25b-d595-4215-97cb-a9a3a74e7da9'
 $GroupTag = "" #Location code for company location or BLANK for Default => Hybrid Azure AD Joined
 
 
@@ -83,7 +83,7 @@ try
     Write-host "Attempting to connect to MSGraph (for Intune) 2"
     Import-Module Microsoft.Graph.Intune
     Import-Module WindowsAutopilotIntune
-    $tenant = "YOURTENANT.onmicrosoft.com"
+    $tenant = "septeogroup.onmicrosoft.com"
     $authority = "https://login.windows.net/$tenant"
     Update-MSGraphEnvironment -AppId $AppId -Quiet
     Update-MSGraphEnvironment -AuthUrl $authority -Quiet
