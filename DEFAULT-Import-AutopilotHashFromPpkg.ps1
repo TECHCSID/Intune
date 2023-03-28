@@ -53,7 +53,7 @@ Start-Sleep -Seconds 5
 # Generate Access Token to use in the connection string to MSGraph
 $AppId = 'c06d865e-c3c2-4a4e-9752-3fc7ce8a3f60'
 $TenantId = '9ced4109-8739-4295-8d3f-a19371aae263'
-$AppSecret = 'df59d25b-d595-4215-97cb-a9a3a74e7da9'
+$AppSecret = 'O788Q~~iNY~WNMveTUIhm7jGCFV0dPe4~bJk9a~T'
 $GroupTag = "" #Location code for company location or BLANK for Default => Hybrid Azure AD Joined
 
 
