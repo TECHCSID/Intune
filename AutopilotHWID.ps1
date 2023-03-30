@@ -1,8 +1,7 @@
-New-Item -Type Directory -Path "C:\HWID"
-Set-Location -Path "C:\HWID"
-$env:Path += ";C:\Program Files\WindowsPowerShell\Scripts"
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
-Install-Script -Name Get-WindowsAutopilotInfo
-Get-WindowsAutopilotInfo -OutputFile Autopilot_HWID.csv
-#import-csv -path "c:\hwid\autopilot_hwid.csv" -delimiter "," | select-object "hardware hash"
-Get-content -path "c:\hwid\autopilot_hwid.csv"
+New-Item -Type Directory -Path “c:\HH”
+Set-Location -Path “c:\HH”
+$env:Path +=”;c:\Program Files\WindowsPowerShell\Scripts”
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Force
+Install-Script -Name Get-WindowsAutoPilotInfo
+Get-WindowsAutoPilotInfo -OutputFile HardwareHashDevice.csv
+import-csv -path "c:\HH\HardwareHashDevice.csv" -delimiter "," | select-object "hardware hash"
