@@ -1,6 +1,6 @@
-New-Item -Type Directory -Path “c:\HardHash”
-Set-Location -Path “c:\HardHash”
-$env:Path +=”;c:\Program Files\WindowsPowerShell\Scripts”
+New-Item -Type Directory -Path "c:\HardHash"
+Set-Location -Path "c:\HardHash"
+$env:Path +=";c:\Program Files\WindowsPowerShell\Scripts"
 Set-ExecutionPolicy -ExecutionPolicy Bypass -Force
 Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Confirm:$false -Force:$true
 Install-Script get-windowsautopilotinfo -Confirm:$false -Force:$true
